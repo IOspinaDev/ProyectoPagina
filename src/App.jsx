@@ -5,17 +5,26 @@ import WorkshopCard from "./components/WorkshopCard";
 import Gallery from "./components/Gallery";
 import Map from "./components/Map";
 import Footer from "./components/Footer";
-import Taller from "./components/Taller";
 import Impact from "./components/Impact";
+import Taller from "./components/Taller";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
 
-      <section className="bg-[#f1f5f9] py-20 px-6 md:px-20">
+      {/* HERO */}
+      <section id="hero">
+        <Hero />
+      </section>
+
+      {/* ABOUT */}
+      <section id="about">
+        <About />
+      </section>
+
+      {/* TALLERES (SECCIÓN MANUAL) */}
+      <section id="talleres" className="bg-[#f1f5f9] py-20 px-6 md:px-20">
 
         {/* Encabezado */}
         <div className="max-w-4xl mx-auto text-center mb-12">
@@ -68,11 +77,26 @@ function App() {
         </div>
       </section>
 
-      <Gallery />
+      {/* GALERÍA */}
+      <section id="galeria">
+        <Gallery />
+      </section>
+
+      {/* COMPONENTE TALLER (NO SE BORRA, SOLO SE DEJA ABAJO) */}
       <Taller />
+
+      {/* MAPA (si falla, lo comentas) */}
       <Map />
-      <Impact />
-      <Footer />
+
+      {/* IMPACTO */}
+      <section id="impacto">
+        <Impact />
+      </section>
+
+      {/* FOOTER / CONTACTO */}
+      <section id="contacto">
+        <Footer />
+      </section>
     </>
   );
 }
