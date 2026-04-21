@@ -5,8 +5,8 @@ import WorkshopCard from "./components/WorkshopCard";
 import Gallery from "./components/Gallery";
 import Map from "./components/Map";
 import Footer from "./components/Footer";
-import Impact from "./components/impact";
-import Taller from "./components/talleres";
+import Taller from "./components/Taller";
+import Impact from "./components/Impact";
 
 function App() {
   return (
