@@ -39,7 +39,7 @@ export default function Gallery() {
         </h2>
 
         <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
-          Un recorrido visual por la vida en el manglar, la tradición y la identidad cultural del Pacífico.
+          Uns recorrido visual por la vida en el manglar, la tradición y la identidad cultural del Pacífico.
         </p>
       </motion.div>
 
