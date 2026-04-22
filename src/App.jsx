@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Impact from "./components/Impact";
 import Taller from "./components/Taller";
 import Contexto from "./components/Contexto";
-import Piangua from "./components/PianguaS";
+import Piangua from "./components/Piangua";
 
 function App() {
   return (
