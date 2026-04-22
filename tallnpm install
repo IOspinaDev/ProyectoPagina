@@ -1,0 +1,20 @@
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to HEAD@{17}
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to HEAD@{16}
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: reset: moving to HEAD@{15}
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{3}: reset: moving to HEAD@{16}
+[33m02982be[m HEAD@{4}: pull origin main --rebase (finish): returning to refs/heads/main
+[33m02982be[m HEAD@{5}: pull origin main --rebase (start): checkout 02982be9e5e7d2869890da4e817eb109c7b9b818
+[33m5e06bc5[m HEAD@{6}: rebase (abort): returning to refs/heads/main
+[33m5e06bc5[m HEAD@{7}: rebase (abort): returning to refs/heads/main
+[33mca1c4d4[m HEAD@{8}: commit: proyecto piangua
+[33m5e06bc5[m HEAD@{9}: commit: feat: galeria interactiva con scroll y animaciones
+[33m7441bb5[m HEAD@{10}: commit: disable map for deploy
+[33m159c7dd[m HEAD@{11}: commit: disable map for deploy
+[33medae72d[m HEAD@{12}: commit: add leaflet
+[33m18e3ee3[m HEAD@{13}: commit: fix case sensitive imports
+[33mb0fc114[m HEAD@{14}: commit: fix case sensitive imports
+[33mdece6bb[m HEAD@{15}: commit: fix case sensitive imports
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{16}: Branch: renamed refs/heads/main to refs/heads/main
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{18}: Branch: renamed refs/heads/main to refs/heads/main
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{20}: Branch: renamed refs/heads/master to refs/heads/main
+[33mc1d5cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{22}: commit (initial): proyecto piangua
