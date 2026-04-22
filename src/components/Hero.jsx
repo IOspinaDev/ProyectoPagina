@@ -65,39 +65,8 @@ export default function Hero() {
           Fortalecemos las comunidades del Pacífico mediante la promoción
           del manglar, la recolección sostenible de la piangua y el uso de
           herramientas digitales para visibilizar su valor cultural y económico.
-        </motion.p>
-
-        {/* Botones */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-8 flex gap-4"
-        >
-          {/* BOTÓN 1 */}
-          <button
-            onClick={() =>
-              document.getElementById("about").scrollIntoView({
-                behavior: "smooth",
-              })
-            }
-            className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
-          >
-            Conocer el Proyecto
-          </button>
-
-          {/* BOTÓN 2 */}
-          <button
-            onClick={() =>
-              document.getElementById("talleres").scrollIntoView({
-                behavior: "smooth",
-              })
-            }
-            className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
-          >
-            Ver Talleres
-          </button>
-        </motion.div>
+        </motion.p>        
+          
       </div>
 
       {/* Indicadores */}

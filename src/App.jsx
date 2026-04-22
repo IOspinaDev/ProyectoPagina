@@ -7,6 +7,8 @@ import Map from "./components/Map";
 import Footer from "./components/Footer";
 import Impact from "./components/Impact";
 import Taller from "./components/Taller";
+import Contexto from "./components/Contexto";
+import Piangua from "./components/Piangua";
 
 function App() {
   return (
@@ -21,6 +23,16 @@ function App() {
       {/* ABOUT */}
       <section id="about">
         <About />
+      </section>
+
+      {/* CONTEXTO */}
+      <section id="contexto">
+        <Contexto />
+      </section>
+
+      {/* PIANGUA */}
+      <section id="piangua">
+        <Piangua />
       </section>
 
       {/* TALLERES (SECCIÓN MANUAL) */}
@@ -95,8 +107,8 @@ function App() {
 
       {/* FOOTER / CONTACTO */}
       <section id="contacto">
-        <Footer />
-      </section>
+  <Footer />
+</section>
     </>
   );
 }
