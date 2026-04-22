@@ -6,7 +6,7 @@ export default function Piangua() {
       
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          ¿Qué es la Pian gua?
+          ¿Qué es la Piangua?
         </h2>
 
         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
