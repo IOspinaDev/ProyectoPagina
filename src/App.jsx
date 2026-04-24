@@ -9,7 +9,6 @@ import Impact from "./components/Impact";
 import Taller from "./components/Taller";
 import Contexto from "./components/Contexto";
 import Piangua from "./components/Piangua";
-import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
