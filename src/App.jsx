@@ -37,7 +37,7 @@ function App() {
 
       {/* TALLERES (SECCIÓN MANUAL) */}
       <section id="talleres" className="bg-[#f1f5f9] py-20 px-6 md:px-20">
-      <Taller />
+        <Taller />
       </section>
 
       {/* GALERÍA */}
@@ -51,15 +51,12 @@ function App() {
       {/* MAPA (si falla, lo comentas) */}
       <Map />
 
-      {/* IMPACTO */}
-      <section id="impacto">
+      {/* FOOTER / CONTACTO */}
+      <section id="contacto">
         <Impact />
       </section>
 
-      {/* FOOTER / CONTACTO */}
-      <section id="contacto">
-  <Footer />
-</section>
+      <Footer />
     </>
   );
 }

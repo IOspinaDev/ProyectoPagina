@@ -51,10 +51,14 @@ export default function Navbar() {
 
         const rect = el.getBoundingClientRect();
 
-        // Cuando el top pasa el navbar (~80px), consideramos activa
         if (rect.top <= 90) {
           current = id;
         }
+      }
+
+      // 🔥 FIX CLAVE: detectar final de página
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+        current = ids[ids.length - 1]; // contacto
       }
 
       setActive(current);
@@ -79,8 +83,8 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${active !== "hero"
-        ? "bg-black/80 backdrop-blur-lg shadow-lg"
-        : "bg-transparent"
+      ? "bg-black/80 backdrop-blur-lg shadow-lg"
+      : "bg-transparent"
       }`}>
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
@@ -91,8 +95,8 @@ export default function Navbar() {
               <button
                 onClick={() => scrollTo(sec.id)}
                 className={`relative pb-1 transition ${active === sec.id
-                    ? "text-green-400"
-                    : "text-gray-300 hover:text-white"
+                  ? "text-green-400"
+                  : "text-gray-300 hover:text-white"
                   }`}
               >
                 {sec.label}

@@ -8,24 +8,28 @@ import t4 from "../assets/sopa-piangua.jpg";
 
 const talleres = [
   {
+    id: "digital",
     title: "Alfabetización Digital",
     desc: "Uso básico de celulares y herramientas digitales.",
     full: "Aprenden a usar celulares, redes y herramientas digitales para mejorar su comunicación y oportunidades.",
     img: t1
   },
   {
+    id: "comercial",
     title: "Comercialización",
     desc: "Venta de productos en medios digitales.",
     full: "Se enseñan estrategias para vender productos como la piangua en redes sociales.",
     img: t2
   },
   {
+    id: "manglar",
     title: "Cuidado del Manglar",
     desc: "Protección del ecosistema.",
     full: "Se promueve el cuidado del manglar para garantizar la sostenibilidad.",
     img: t3
   },
   {
+    id: "emprendimiento",
     title: "Emprendimiento",
     desc: "Creación de negocios locales.",
     full: "Se apoya la creación de negocios basados en productos del territorio.",
@@ -41,23 +45,33 @@ export default function Taller() {
     t.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  // ⌨️ navegación teclado
+  // 🔥 REORDENAR: activo primero
+  const ordered = active
+    ? [
+        filtered.find(t => t.id === active),
+        ...filtered.filter(t => t.id !== active)
+      ].filter(Boolean)
+    : filtered;
+
+  // ⌨️ teclado FIX
   useEffect(() => {
     const handleKey = (e) => {
       if (!filtered.length) return;
 
+      const currentIndex = filtered.findIndex(t => t.id === active);
+
       if (e.key === "ArrowRight") {
-        setActive(prev =>
-          prev === null ? 0 : (prev + 1) % filtered.length
-        );
+        const next =
+          currentIndex === -1 ? 0 : (currentIndex + 1) % filtered.length;
+        setActive(filtered[next].id);
       }
 
       if (e.key === "ArrowLeft") {
-        setActive(prev =>
-          prev === null
+        const prev =
+          currentIndex === -1
             ? 0
-            : (prev - 1 + filtered.length) % filtered.length
-        );
+            : (currentIndex - 1 + filtered.length) % filtered.length;
+        setActive(filtered[prev].id);
       }
 
       if (e.key === "Escape") setActive(null);
@@ -65,7 +79,7 @@ export default function Taller() {
 
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [filtered]);
+  }, [filtered, active]);
 
   return (
     <section className="py-24 px-6 md:px-20 bg-white">
@@ -87,14 +101,14 @@ export default function Taller() {
 
       {/* GRID */}
       <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filtered.map((item, index) => {
-          const isActive = active === index;
+        {ordered.map((item) => {
+          const isActive = active === item.id;
 
           return (
             <motion.div
-              key={index}
+              key={item.id}
               layout
-              onClick={() => setActive(isActive ? null : index)}
+              onClick={() => setActive(isActive ? null : item.id)}
               className={`cursor-pointer rounded-xl overflow-hidden shadow-md bg-white transition ${
                 isActive
                   ? "col-span-full md:grid md:grid-cols-2"
