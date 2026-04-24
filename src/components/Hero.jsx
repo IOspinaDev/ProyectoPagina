@@ -1,14 +1,25 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import canoa from "../assets/canoa.jpg";
+import piangua from "../assets/piangua.jpg";
+import pianguera1 from "../assets/pianguera-1.png";
+import pianguera2 from "../assets/pianguera-2.png";
+import pianguera3 from "../assets/pianguera-3.png";
+import pianguera4 from "../assets/pianguera-4.jpg";
+import sopa from "../assets/sopa-piangua.jpg";
 
 export default function Hero() {
   const images = [
     // Manglares y recolección
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    canoa,
     // Comunidad rural / costa
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+    piangua,
     // Trabajo artesanal / territorio
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    pianguera1,
+    pianguera2,
+    pianguera3,
+    pianguera4,
+    sopa,
   ];
 
   const [index, setIndex] = useState(0);

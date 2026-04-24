@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import sopa from "../assets/sopa-piangua.jpg";
 
 export default function About() {
   return (
@@ -65,7 +66,7 @@ export default function About() {
           className="relative"
         >
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            src={sopa}
             className="rounded-2xl shadow-lg object-cover w-full h-[400px]"
           />
 

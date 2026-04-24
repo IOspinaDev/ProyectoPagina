@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import pianguera3 from "../assets/pianguera-3.png";
 
 export default function Contexto() {
   return (
@@ -9,7 +10,7 @@ export default function Contexto() {
       {/* Fondo */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          src= {pianguera3}
           alt="Manglar Pacífico"
           className="w-full h-full object-cover"
         />
