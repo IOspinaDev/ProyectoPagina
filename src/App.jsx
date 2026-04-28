@@ -45,8 +45,6 @@ function App() {
         <Gallery />
       </section>
 
-      {/* COMPONENTE TALLER (NO SE BORRA, SOLO SE DEJA ABAJO) */}
-      <Taller />
 
       {/* MAPA (si falla, lo comentas) */}
       <Map />
@@ -57,7 +55,6 @@ function App() {
       </section>
 
       <Footer />
-      <Analytics />
     </>
   );
 }
